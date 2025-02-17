@@ -4,10 +4,17 @@
   align-items: center;
   padding: 1rem;
   gap: 1rem;
+  height: 100%;
+  width: 100%;
 }
 
 h2 {
   margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  line-height: 40px;
 }
 
 .container .about-service {
@@ -21,7 +28,6 @@ h2 {
   padding: 1rem 2rem;
   font-size: 1.4rem;
 }
-
 
 .container .about-service img {
   height: inherit;
@@ -38,7 +44,9 @@ h2 {
   align-items: center;
   justify-content: space-between;
   font-size: 1.4rem;
+  letter-spacing: 2px;
   background-color: rgb(240, 70, 70);
+  color: whitesmoke;
   height: 100%;
   padding: 1rem 2rem;
 }
@@ -47,39 +55,44 @@ h2 {
   width: 40%;
 }
 
-.container .tratamientos ul li {
-  list-style: none;
+
+.tratamientos .illustrations {
+  display: flex;
 }
 
 .container .tratamientos img {
   height: 200px;
 }
 
-
 .container .sintomas {
   width: 100%;
   height: 100%;
   padding: 1rem 2rem;
   background-color: rgb(252, 121, 73);
+  color: whitesmoke;
   text-align: center;
 }
 
 .sintomas ul {
-  list-style: none;
   font-size: 1.4rem;
-  line-height: 40px;
 }
 
 .agendar-cita {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 1rem;
   height: 30vh;
   width: 100%;
   font-size: 1.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.agendar-cita span {
+  font-weight: bold;
+  color: rgb(254, 12, 12);
 }
 
 .agendar-cita button {
@@ -95,9 +108,87 @@ h2 {
 }
 
 .agendar-cita button:hover {
-  background-color:rgba(236, 89, 89, 0.807) ;
+  background-color: rgba(236, 89, 89, 0.807);
 }
 
 .agendar-cita button:focus {
-  background-color:rgba(236, 22, 22, 0.807) ;
+  background-color: rgba(236, 22, 22, 0.807);
+}
+
+/*Responsive*/
+
+
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: aqua;
+  }
+
+  .container img {
+    display: none;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .about-service span,
+  .tratamientos span,
+  .sintomas span {
+    display: none;
+  }
+
+  .container .about-service p {
+    width: 100%;
+  }
+
+  .agendar-cita {
+    height: auto;
+  }
+}
+
+@media screen and (min-width:600px) {
+
+  header {
+    background-color: rgb(255, 0, 68);
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .container .about-service p {
+    width: 100%;
+  }
+
+
+  .container img {
+    display: none;
+  }
+
+  .agendar-cita {
+    height: auto;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    background-color: aqua;
+  }
+
+  .container .about-service p {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container .about-service,
+  .tratamientos {
+    text-align: left;
+  }
+  
+  .container img {
+    display: block;
+  }
+
 }

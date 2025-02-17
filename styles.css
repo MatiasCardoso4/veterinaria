@@ -1,22 +1,18 @@
 .container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
 }
 
-aside {
-  width: 20vw;
-}
 
 .hero-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 400px);
+  grid-template-columns: repeat(auto-fit, 500px);
   justify-content: center;
   width: 100%;
   height: 100%;
   gap: 10px;
-  padding:  1rem;
-
+  padding: 1rem;
 }
 
 .hero-section article {
@@ -82,9 +78,6 @@ aside img {
 
 
 @media only screen and (max-width: 600px)  {
-  header {
-    background-color: rgba(23, 255, 30, 0.659);
-  }
 .hero-section {
   grid-template-columns: auto;
 }
@@ -100,9 +93,6 @@ aside img {
 }
 
 @media only screen and (min-width: 600px) {
-  header {
-    background-color: rgb(193, 213, 8);
-  }
   .hero-section .consultas-generales,
   .hero-section .cirugias,
   .hero-section .vacunacion,
@@ -115,9 +105,6 @@ aside img {
 
 
 @media screen and (min-width: 768px) {
-header {
-  background-color: red;
-}
   .hero-section .consultas-generales,
   .hero-section .cirugias,
   .hero-section .vacunacion,
@@ -129,15 +116,13 @@ header {
 }
 
 @media screen and (min-width: 992px) {
-  header {
-    background-color: rgb(55, 0, 255);
-  }
   .hero-section .consultas-generales,
   .hero-section .cirugias,
   .hero-section .vacunacion,
   .hero-section .tienda,
   .hero-section .urgencias,
   .hero-section .peluqueria {
-    height: 400px;
+    height: 500px;
   }
 }
+
