@@ -4,8 +4,7 @@
   align-items: center;
   padding: 1rem;
   gap: 1rem;
-  height: 100%;
-  width: 100%;
+  min-height: 100dvh;
 }
 
 h2 {
@@ -119,9 +118,6 @@ ul {
 
 
 @media only screen and (max-width: 600px) {
-  header {
-    background-color: aqua;
-  }
 
   .container img {
     display: none;
@@ -132,9 +128,13 @@ ul {
   }
 
   .about-service span,
-  .tratamientos span,
-  .sintomas span {
+  .sintomas span,
+  .tratamientos h2 span {
     display: none;
+  }
+
+  .tratamientos li {
+    margin-top: 20px;
   }
 
   .container .about-service p {
@@ -148,9 +148,7 @@ ul {
 
 @media screen and (min-width:600px) {
 
-  header {
-    background-color: rgb(255, 0, 68);
-  }
+
 
   .container {
     text-align: center;
@@ -172,9 +170,6 @@ ul {
 }
 
 @media only screen and (min-width: 768px) {
-  header {
-    background-color: aqua;
-  }
 
   .container .about-service p {
     width: 100%;
@@ -182,11 +177,12 @@ ul {
 }
 
 @media only screen and (min-width: 1200px) {
+
   .container .about-service,
   .tratamientos {
     text-align: left;
   }
-  
+
   .container img {
     display: block;
   }
