@@ -34,6 +34,7 @@ ul {
 
 .container .about-service p {
   width: 80%;
+  max-width: 100%;
   margin-top: 20px;
 }
 
@@ -52,6 +53,7 @@ ul {
 
 .container .tratamientos p {
   width: 40%;
+  max-width: 100%;
 }
 
 
@@ -114,77 +116,44 @@ ul {
   background-color: rgba(236, 22, 22, 0.807);
 }
 
+
+
 /*Responsive*/
 
 
 @media only screen and (max-width: 600px) {
 
-  .container img {
-    display: none;
+  h1,
+  h2 {
+    display: flex;
+    flex-direction: column-reverse
   }
+}
 
+@media only screen and (max-width: 768px) {
+
+  .container .about-service p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .container {
     text-align: center;
   }
 
-  .about-service span,
-  .sintomas span,
-  .tratamientos h2 span {
+  .container img {
     display: none;
-  }
-
-  .tratamientos li {
-    margin-top: 20px;
   }
 
   .container .about-service p {
     width: 100%;
-  }
-
-  .agendar-cita {
-    height: auto;
-  }
-}
-
-@media screen and (min-width:600px) {
-
-
-
-  .container {
     text-align: center;
   }
 
-  .container .about-service p {
-    width: 100%;
-  }
-
-
-  .container img {
-    display: none;
-  }
-
   .agendar-cita {
     height: auto;
-  }
-
-}
-
-@media only screen and (min-width: 768px) {
-
-  .container .about-service p {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-
-  .container .about-service,
-  .tratamientos {
-    text-align: left;
-  }
-
-  .container img {
-    display: block;
   }
 
 }
