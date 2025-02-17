@@ -1,10 +1,6 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  gap: 1rem;
-  min-height: 100dvh;
+
+h1 {
+  font-size: 4rem;
 }
 
 h2 {
@@ -89,11 +85,23 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.agendar-cita span {
+.agendar-cita a {
   font-weight: bold;
   color: rgb(254, 12, 12);
+  text-decoration: none;
+}
+
+.agendar-cita .logo {
+  position: fixed;
+  right: 25px;
+  bottom:  20px;
+}
+
+.agendar-cita img {
+  width: 50px;
 }
 
 .agendar-cita button {
@@ -141,6 +149,10 @@ ul {
 @media only screen and (max-width: 1000px) {
   .container {
     text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   .container img {
