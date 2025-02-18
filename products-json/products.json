@@ -1,0 +1,104 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Croquetas Premium para Perro",
+      "categoria": "Alimentos",
+      "marca": "Royal Canin",
+      "precio": 50.99,
+      "descripcion": "Alimento balanceado para perros adultos de raza mediana.",
+      "stock": 20,
+      "imagen": "/assets/productos-images/croquetas_perro.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Croquetas para Gato",
+      "categoria": "Alimentos",
+      "marca": "Purina Pro Plan",
+      "precio": 45.50,
+      "descripcion": "Alimento seco para gatos adultos, rico en proteínas.",
+      "stock": 15,
+      "imagen": "/assets/productos-images/croquetas_gato.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Shampoo Antipulgas",
+      "categoria": "Higiene",
+      "marca": "Frontline",
+      "precio": 12.99,
+      "descripcion": "Shampoo especial para eliminar pulgas y garrapatas en perros.",
+      "stock": 30,
+      "imagen": "/assets/productos-images/shampoo_antipulgas.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Cama para Mascotas",
+      "categoria": "Accesorios",
+      "marca": "PetComfort",
+      "precio": 35.00,
+      "descripcion": "Cama acolchonada para perros y gatos, tamaño mediano.",
+      "stock": 10,
+      "imagen": "/assets/productos-images/cama_mascotas.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Juguete de Peluche",
+      "categoria": "Juguetes",
+      "marca": "KONG",
+      "precio": 14.75,
+      "descripcion": "Juguete de peluche con sonido para perros pequeños.",
+      "stock": 25,
+      "imagen": "/assets/productos-images/juguete_peluche.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Rascador para Gato",
+      "categoria": "Accesorios",
+      "marca": "CatFun",
+      "precio": 28.99,
+      "descripcion": "Rascador vertical para gatos con base estable.",
+      "stock": 8,
+      "imagen": "/assets/productos-images/rascador_gato.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Collar con Identificación",
+      "categoria": "Accesorios",
+      "marca": "PetSafe",
+      "precio": 10.50,
+      "descripcion": "Collar ajustable con placa para identificación.",
+      "stock": 50,
+      "imagen": "/assets/productos-images/collar_identificacion.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Hueso Masticable",
+      "categoria": "Juguetes",
+      "marca": "Nylabone",
+      "precio": 8.99,
+      "descripcion": "Hueso masticable duradero para fortalecer la mandíbula del perro.",
+      "stock": 40,
+      "imagen": "/assets/productos-images/hueso_masticable.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Arena para Gatos",
+      "categoria": "Higiene",
+      "marca": "Sanicat",
+      "precio": 18.50,
+      "descripcion": "Arena absorbente y sin olor para la bandeja de gatos.",
+      "stock": 22,
+      "imagen": "/assets/productos-images/arena_gatos.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Comedero Antideslizante",
+      "categoria": "Accesorios",
+      "marca": "PetZone",
+      "precio": 12.00,
+      "descripcion": "Comedero de acero inoxidable con base de goma antideslizante.",
+      "stock": 30,
+      "imagen": "/assets/productos-images/comedero_antideslizante.jpg"
+    }
+  ]
+}
