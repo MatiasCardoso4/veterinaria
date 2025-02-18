@@ -1,0 +1,105 @@
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+
+h2 {
+  font-size:2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h2,
+p {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  width: 60%;
+}
+
+ol {
+  font-size: 1.4rem;
+  color: red;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  background-color: #212433;
+  color: whitesmoke;
+  font-weight: bold;
+  width: 60%;
+}
+
+ul,
+.atencion p {
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100dvw;
+}
+
+.atencion {
+  width: 50%;
+  padding: 1rem;
+}
+
+.atencion .row {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+}
+
+
+.atencion p {
+  background-color: rgb(250, 152, 152);
+  color: #000;
+  margin: 0;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+
+@media screen and (max-width:600px) {
+
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+.atencion {
+  width: 100%;
+}
+}
+
+@media screen and (max-width:1400px){
+
+  p,ul {
+    width: 100%;
+  }
+  .atencion .row{
+    gap: 2rem;
+  }
+}

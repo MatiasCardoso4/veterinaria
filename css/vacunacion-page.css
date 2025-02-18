@@ -1,26 +1,38 @@
+
+h1 {
+  font-size: 2.5rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h2,
+p {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+
 .container {
   display: grid;
 }
-
 
 .hero-section {
   height: 100%;
   width: 100%;
   background-color: rgb(235, 237, 234);
   padding: 1rem;
-  text-align: center;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h2,
-p {
   text-align: center;
 }
 
@@ -77,18 +89,6 @@ margin-bottom: 10px;
   color: rgb(248, 255, 112);
 }
 
-.vacunas-container ul {
-  list-style: none;
-}
-
-.vacunas-container li {
-  font-size: 1.3rem;
-  display: flex;
-  align-items: center;
-  letter-spacing: 1px;
-}
-
-
 .desparacitacion {
     height: 100%;
   width: 100%;
@@ -115,21 +115,22 @@ margin-bottom: 10px;
 
 .info ul {
   width: 100%;
-  list-style: none;
   padding: 2rem;
   display: flex;
   justify-content: space-evenly;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+}
 
+.info li {
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
 
-  p {
-    padding: 1rem;
+  .container p {
     width: 100%;
   }
-
+ 
   .vacunas-container {
     flex-wrap: wrap;
     gap: 15px;
@@ -138,6 +139,12 @@ margin-bottom: 10px;
   .vacunas-container ul h3 span,
   .desparacitacion ul h3 span {
     height: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 2rem;
   }
 
   .desparacitacion-tipos {
@@ -148,19 +155,8 @@ margin-bottom: 10px;
   }
 
   .info ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
-
-
-@media only screen and (max-width: 1000px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  .info ul {
     flex-wrap: wrap;
     gap: 15px;
+    font-size: 0.90rem;
   }
 }
