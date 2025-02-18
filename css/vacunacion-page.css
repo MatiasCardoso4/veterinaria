@@ -19,7 +19,7 @@ p {
   text-align: center;
 }
 
-p {
+.container p {
   font-size: 1.3rem;
   margin:  20px 0;
   width: 60%;
@@ -117,33 +117,6 @@ margin-bottom: 10px;
   font-size: 1.3rem;
 
 }
-
-.contacto {
-  font-size: 1.3rem;
-  height: 100%;
-  width: 100%;
-  padding: 2rem 1rem;
-  background-color: rgb(0, 0, 0);
-  color: whitesmoke;
-  position: relative;
-}
-
-.contacto a{
-  font-weight: bold;
-  color: rgb(255, 239, 92);
-  text-decoration: none;
-}
-
-.contacto .logo {
-  position: fixed;
-  right: 25px;
-  bottom:  20px;
-}
-
-.logo img {
-  width: 50px;
-}
-
 
 @media only screen and (max-width: 600px) {
 
