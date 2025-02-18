@@ -7,14 +7,22 @@
 body {
   min-height: 100dvh;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .container {
   min-height: 100dvh;
+  width: 100dvw;
+
 }
 
 header {
   height: 100px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
 }
 
 header .logo {
@@ -32,6 +40,8 @@ header .logo {
   position: relative;
   display: flex;
   justify-content: center;
+  letter-spacing: 1px;
+  line-height: 26px;
 }
 
 .contacto a {
@@ -48,4 +58,10 @@ header .logo {
 
 .contacto .logo img {
   width: 30px;
+}
+
+
+@media screen  and (max-width:1200px){
+
+ 
 }

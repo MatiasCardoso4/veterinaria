@@ -6,9 +6,19 @@ h2 {
   margin-bottom: 15px;
 }
 
+p {
+  width: 40%;
+  letter-spacing: 1px;
+  line-height: 32px;
+}
+
 ul {
   list-style: none;
   line-height: 40px;
+}
+
+.container {
+  display: grid;
 }
 
 .container .about-service {
@@ -35,7 +45,7 @@ ul {
 
 .container .tratamientos {
   display: flex;
-  width: 100%;
+  width: 100dvw;
   align-items: center;
   justify-content: space-between;
   font-size: 1.4rem;
@@ -43,7 +53,7 @@ ul {
   background-color: rgb(240, 70, 70);
   color: whitesmoke;
   height: 100%;
-  padding: 1rem 2rem;
+  padding:  1rem 2rem;
 }
 
 .container .tratamientos p {
@@ -51,9 +61,10 @@ ul {
   max-width: 100%;
 }
 
-
 .tratamientos .illustrations {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
 }
 
 .container .tratamientos img {
@@ -63,13 +74,10 @@ ul {
 .container .sintomas {
   width: 100%;
   height: 100%;
-  padding: 1rem 2rem;
+  padding:  2rem;
   background-color: rgb(252, 121, 73);
   color: whitesmoke;
   text-align: center;
-}
-
-.sintomas ul {
   font-size: 1.4rem;
 }
 
@@ -85,6 +93,7 @@ ul {
   justify-content: center;
   align-items: center;
   position: relative;
+  text-align: center;
 }
 
 .agendar-cita a {
@@ -96,7 +105,7 @@ ul {
 .agendar-cita .logo {
   position: fixed;
   right: 25px;
-  bottom:  20px;
+  bottom: 20px;
 }
 
 .agendar-cita img {
@@ -127,44 +136,44 @@ ul {
 
 /*Responsive*/
 
-
-@media only screen and (max-width: 600px) {
-
-  h1,
-  h2 {
-    display: flex;
-    flex-direction: column-reverse
-  }
-}
-
-@media only screen and (max-width: 768px) {
-
-  .container .about-service p {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .container {
-    text-align: center;
-  }
+@media only screen and (max-width: 1400px) {
 
   h1 {
     font-size: 2rem;
   }
 
+  ul {
+    font-size: 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 1600px) {
+  p {
+    width: 100%;
+  }
+
+  .container {
+    text-align: center;
+  }
   .container img {
     display: none;
   }
 
   .container .about-service p {
     width: 100%;
-    text-align: center;
+  }
+
+  .tratamientos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .agendar-cita {
     height: auto;
   }
+
 
 }

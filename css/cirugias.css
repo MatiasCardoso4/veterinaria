@@ -1,5 +1,8 @@
 .container {
   padding: 0;
+  text-align: center;
+  display: grid;
+
 }
 
 h1 {
@@ -14,10 +17,12 @@ h2  {
 
 p {
   width: 45%;
+  max-width: 100%;
   margin-top: 10px;
   line-height: 28px;
   letter-spacing: 1px;
   text-align: center;
+  padding: 0 1rem;
 }
 
 ul {

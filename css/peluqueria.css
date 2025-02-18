@@ -16,6 +16,11 @@ h1,h2 {
   justify-content: center;
 }
 
+p, ul {
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
 p {
   width: 50%;
 }
