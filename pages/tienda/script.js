@@ -1,10 +1,17 @@
 const productsContainer = document.querySelector(".products");
 
 async function getProducts() {
-  const response = await fetch("../../products-json/products.json");
-  const data = await response.json();
-  setDisplay(data.productos);
-  return data;
+  try {
+    const response = await fetch("./products-json/products.json");
+    if (!response) {
+      throw new Error("Error al obtener los productos");
+    }
+    const data = await response.json();
+    setDisplay(data.productos);
+    return data;
+  } catch (e) {
+    console.error(e.message);
+  }
 }
 
 function createProductCard(product) {
@@ -33,4 +40,4 @@ function setDisplay(data) {
   });
 }
 
-getProducts();
+window.addEventListener('DOMContentLoaded',getProducts)
