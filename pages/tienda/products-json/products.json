@@ -29,7 +29,7 @@
       "precio": 12.99,
       "descripcion": "Shampoo especial para eliminar pulgas y garrapatas en perros.",
       "stock": 30,
-      "imagen": "https://matiascardoso4.github.io/veterinaria/productos-images/shampoo_antipulgas.jpg"
+      "imagen": "https://matiascardoso4.github.io/veterinaria/assets/productos-images/shampoo_antipulgas.jpg"
     },
     {
       "id": 4,
