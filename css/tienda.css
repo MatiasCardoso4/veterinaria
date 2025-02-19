@@ -43,7 +43,6 @@ p {
   text-align: center;
 }
 
-
 .card img {
   width: 100%;
   position: absolute;
@@ -73,6 +72,7 @@ p {
   padding: 8px 14px;
   cursor: pointer;
   letter-spacing: 1px;
+  margin-bottom: 0.5rem;
 }
 
 .card button:hover {
