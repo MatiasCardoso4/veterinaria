@@ -8,7 +8,7 @@
       "precio": 50.99,
       "descripcion": "Alimento balanceado para perros adultos de raza mediana.",
       "stock": 20,
-      "imagen": "/assets/productos-images/croquetas_perro.jpg",
+      "imagen": "https://github.com/MatiasCardoso4/veterinaria/assets/productos-images/croquetas_perro.jpg",
       "descuento": 5
     },
     {
