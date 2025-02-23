@@ -286,17 +286,6 @@ header .scheduled-shipment {
     left: -15px;
   }
 
-  header .row input[type='text'] {
-    width: 100%;
-  }
-
-  .row form {
-    margin-top: 50px;
-  }
-
-  .help {
-    margin-top: 10px;
-  }
 
   .cart {
     position: absolute;
@@ -315,11 +304,33 @@ header .scheduled-shipment {
     margin: 0;
   }
 
+  header .row input[type='text'] {
+    width: 100%;
+  }
+
+  .row form {
+    margin-top: 50px;
+  }
+
+  .help {
+    margin-top: 10px;
+  }
+ 
   .help .help-info {
+    height: max-content;
     width: auto;
-    left: -117px;
-    top: 50px;
+    left: -63px;
+    top: 41px;
     font-size: 12px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact--image,  .online--chat  .online--chat-image {
+    width: 25px;
+    height: 25px;
   }
 
   header .scheduled-shipment {
