@@ -6,6 +6,8 @@ body {
   display: grid;
 }
 
+
+
 .hero-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);

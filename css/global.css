@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -12,24 +13,233 @@ body {
   overflow-x: hidden;
 }
 
+
+/*Header*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: gold;
+  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: relative;
+}
+
+header .row {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: flex;
+}
+
+header .logo {
+  width: inherit;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 15px;
+}
+
+header a {
+  text-decoration: none;
+  color: #000;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header .row {
+  background-color: #111111;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+header .row input[type='text'] {
+  height: 45px;
+  width: 18vw;
+  border-radius: 12px 0 0 12px;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.row form {
+  display: flex;
+}
+
+header .row button {
+  height: 40px;
+  width: 55px;
+  border-radius: 0 18px 18px 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 2px;
+  height: 45px;
+}
+
+header .row button img {
+  width: 55px;
+  display: block;
+}
+
+header .help {
+  position: relative;
+  cursor: pointer;
+}
+
+.help .open-help-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.help .open-help-container p {
+  color: white;
+}
+
+.help .open-help-container::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg);
+  margin-bottom: 5px;
+}
+
+.help .open-help-container:hover~.help-info {
+  display: flex;
+}
+
+header .help-info {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  bottom: -290px;
+  left: -10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: max-content;
+  padding: 1.3rem;
+  gap: 10px;
+  display: none;
+}
+
+.help-info .blue-text {
+  color: rgb(30, 84, 211);
+}
+
+.help-info ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.help-info .whatsapp-number-span a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.help-info .whatsapp-number-span .whatsapp-logo {
+  width: 25px;
+  margin: 0;
+}
+
+.whatsapp-number-span .number {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+header .help .contact-container {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.contact-container .online--chat {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.online--chat .online--chat-image,
+.contact--image {
+  background-color: skyblue;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart {
+  background-color: gold;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  border-radius: 22px;
+  justify-content: center;
+}
+
+.cart img {
+  width: 60px;
+  margin-left: -15px;
+  cursor: pointer;
+  display: block;
+}
+
+.cart span {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+header .scheduled-shipment {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0.4rem 0;
+}
+
+.scheduled-shipment,
+.scheduled-shipment a {
+  color: rgb(23, 23, 23);
+}
+
+
+/*Main section */
+
 .container {
   min-height: 100dvh;
   width: 100dvw;
 }
 
-header {
-  height: 100px;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background-color: white;
-  z-index: 1;
-}
-
-header .logo {
-  height: 100px;
-  cursor: pointer;
-}
+/*Footer*/
 
 .contacto {
   font-size: 1rem;
@@ -62,7 +272,64 @@ header .logo {
 }
 
 
-@media screen  and (max-width:1200px){
+@media screen and (max-width: 600px) {
+  header .row {
+    padding: 1rem 0;
+    flex-direction: column;
+    gap: 0;
+  }
 
- 
+  .row .logo {
+    width: 90px;
+    position: absolute;
+    top: -32px;
+    left: -15px;
+  }
+
+  header .row input[type='text'] {
+    width: 100%;
+  }
+
+  .row form {
+    margin-top: 50px;
+  }
+
+  .help {
+    margin-top: 10px;
+  }
+
+  .cart {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    width: 50px;
+  }
+
+  .cart img {
+    width: 30px;
+  }
+
+  .cart .total--products {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .help .help-info {
+    width: auto;
+    left: -117px;
+    top: 50px;
+    font-size: 12px;
+  }
+
+  header .scheduled-shipment {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+
+}
+
+@media screen and (){
+
 }
