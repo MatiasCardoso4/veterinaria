@@ -6,70 +6,71 @@ body {
   display: grid;
 }
 
-
-
 .hero-section {
+  padding: 2rem 0;
+}
+
+.hero-section .hero-title {
+  margin-left: 40px;
+  margin-bottom: 5px;
+  font-size: 2rem;
+}
+
+.hero-products-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
   align-items: center;
+  gap: 10px;
+
+}
+
+.hero-products-card {
   width: 100%;
   height: 100%;
-  gap: 10px;
-  padding: 2rem 0;
-}
-
-.hero-section article {
-  border: 2px solid black;
-  cursor: pointer;
+  border-radius: 8px;
   display: flex;
-  align-items: end;
-  box-shadow: inset 0 -80px 30px 0 rgba(0, 0, 0, 0.609);
-  padding: 1rem;
-  height: 35dvh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 10px rgba(211, 208, 208, 0.5);
+  padding: 1rem ;
 }
 
-.hero-section article a {
-  text-decoration: none;
-  font-weight: 600;
-  color: whitesmoke;
-  font-size: 1.3rem;
+.hero-products-card-img {
+  display: block;
 }
 
-.hero-section .consultas-generales,
-.hero-section .cirugias,
-.hero-section .vacunacion,
-.hero-section .tienda,
-.hero-section .urgencias,
-.hero-section .peluqueria {
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+.hero-products-card-title {
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+margin-top: 6px;
 }
 
-.hero-section .consultas-generales {
-  background-image: url('./assets/consultas-generales-article-background.png');
+.hero-products-card-brand {
+  color: rgb(198, 198, 199);
+  width: 100%;
+  margin-left: 50px;
 }
 
-.hero-section .cirugias {
-  background-image: url('./assets/cirugias-article-background.png');
+.hero-products-card-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.hero-section .vacunacion {
-  background-image: url('./assets/vacunacion-article-background.png');
+.hero-products-card-button {
+  padding: 10px;
+  background-color: rgb(255, 219, 12);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
 
-.hero-section .tienda {
-  background-image: url('./assets/tienda-article-background.png');
+.hero-products-card-button:hover {
+  background-color: rgb(242, 222, 110);
 }
-
-.hero-section .urgencias {
-  background-image: url('./assets/urgencias-article-background.png');
-}
-
-.hero-section .peluqueria {
-  background-image: url('./assets/peluqueria-article-background.png');
-}
-
 
 /*Responsive*/
 
@@ -77,19 +78,19 @@ body {
 @media only screen and (max-width: 600px) {
   .hero-section {
     grid-template-columns: auto;
-    padding: 1rem ;
+    padding: 1rem;
   }
 }
 
 
 
 
-@media only screen and (max-width:1850px){
-body {
-  overflow: auto;
-}
+@media only screen and (max-width:1850px) {
+  body {
+    overflow: auto;
+  }
 
   .hero-section {
-   width: 100%;
+    width: 100%;
   }
 }
