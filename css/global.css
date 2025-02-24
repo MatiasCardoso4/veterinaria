@@ -13,7 +13,6 @@ body {
   overflow-x: hidden;
 }
 
-
 /*Header*/
 
 header {
@@ -181,7 +180,6 @@ header .help .contact-container {
   gap: 10px;
 }
 
-
 .online--chat .online--chat-image,
 .contact--image {
   background-color: skyblue;
@@ -341,6 +339,9 @@ header .scheduled-shipment {
 
 }
 
-@media screen and (){
-
+@media screen and (max-width: 768px){
+  header .help-info  {
+    left: -280px;
+    top: 60px;
+  }
 }

@@ -3,7 +3,7 @@ const products = document.querySelector('.hero-products-list')
 
 async function getProducts() {
   try {
-    const response = await fetch("./homeProducts/homeProducts.json");
+    const response = await fetch("./data/homeProducts.json");
     const data:string[] = await response.json();
     setDisplay(data)
   } catch (e:any) {
