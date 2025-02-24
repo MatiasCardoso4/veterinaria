@@ -97,14 +97,14 @@
 
 .hero-products-card-button {
   padding: 10px;
-  background-color: rgb(255, 219, 12);
+  background-color: #b83af7;
   border-radius: 8px;
   border: none;
   cursor: pointer;
 }
 
 .hero-products-card-button:hover {
-  background-color: rgb(242, 222, 110);
+  background-color: #b83af7ca;
 }
 
 /*Responsive*/
