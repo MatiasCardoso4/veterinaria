@@ -6,23 +6,8 @@ h2 {
   margin-bottom: 15px;
 }
 
-p {
-  width: 40%;
-  letter-spacing: 1px;
-  line-height: 32px;
-}
-
-ul {
-  list-style: none;
-  line-height: 40px;
-}
-
-.container {
-  display: grid;
-}
-
 .container .about-service {
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(251, 249, 249);
 }
 
 .container .about-service {
@@ -43,22 +28,17 @@ ul {
   margin-top: 20px;
 }
 
-.container .tratamientos {
+ .tratamientos {
+  width: 100%;
+  height: 100%;
   display: flex;
-  width: 100dvw;
   align-items: center;
   justify-content: space-between;
   font-size: 1.4rem;
   letter-spacing: 2px;
-  background-color: rgb(240, 70, 70);
+  background-color: #b83af7;
   color: whitesmoke;
-  height: 100%;
   padding:  1rem 2rem;
-}
-
-.container .tratamientos p {
-  width: 40%;
-  max-width: 100%;
 }
 
 .tratamientos .illustrations {
@@ -75,8 +55,8 @@ ul {
   width: 100%;
   height: 100%;
   padding:  2rem;
-  background-color: rgb(252, 121, 73);
-  color: whitesmoke;
+  background-color: rgb(251, 249, 249);
+  color: rgb(5, 5, 5);
   text-align: center;
   font-size: 1.4rem;
 }
@@ -132,8 +112,6 @@ ul {
   background-color: rgba(236, 22, 22, 0.807);
 }
 
-
-
 /*Responsive*/
 
 @media only screen and (max-width: 1400px) {
@@ -147,12 +125,7 @@ ul {
   }
 }
 
-
 @media only screen and (max-width: 1600px) {
-  p {
-    width: 100%;
-  }
-
   .container {
     text-align: center;
   }
@@ -174,6 +147,5 @@ ul {
   .agendar-cita {
     height: auto;
   }
-
 
 }

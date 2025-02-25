@@ -1,9 +1,13 @@
 .hero-section {
   padding: 2rem 0;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hero-section .hero-title {
-  margin-left: 40px;
+  margin-left: 233px;
   margin-bottom: 5px;
   font-size: 2rem;
 }
@@ -11,6 +15,7 @@
 .hero-section .offers-container {
   background-color: rgb(251, 249, 249);
   padding: 1rem;
+  width: 100%;
 }
 
 .offers-container ul {

@@ -18,6 +18,10 @@ ul {
   display: flex;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*Header*/
 
 header {
@@ -149,11 +153,6 @@ header .help-info {
   width: 25px;
 }
 
-.whatsapp-number-span a,
-.contact-container a,
-.online--chat a {
-  text-decoration: none;
-}
 
 header .help .contact-container {
   display: flex;
@@ -183,8 +182,6 @@ header .help .contact-container {
   display: flex;
 }
 
-
-
 .cart {
   background-color: rgb(255, 255, 255);
   height: 50px;
@@ -196,7 +193,6 @@ header .help .contact-container {
   gap: 10px;
   padding: 1rem;
 }
-
 
 .cart img {
   width: 100%;
@@ -219,7 +215,6 @@ header .scheduled-shipment {
 .nav-bar ul {
   justify-content: center;
   flex-wrap: wrap;
-
 }
 
 .nav-bar a {
@@ -245,6 +240,7 @@ header .scheduled-shipment {
 .container {
   min-height: 100dvh;
   width: 100dvw;
+
 }
 
 /*Footer*/
@@ -288,6 +284,12 @@ header .scheduled-shipment {
     gap: 4px;
   }
 
+
+
+  .cart img {
+    width: 50px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -312,10 +314,6 @@ header .scheduled-shipment {
     border-radius: 50%;
     padding: 0;
     justify-content: center;
-  }
-
-  .cart img {
-    width: 50px;
   }
 
   .cart .total--products {
