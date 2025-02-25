@@ -21,12 +21,10 @@ header {
   align-items: center;
   height: 100%;
   width: 100%;
-  position: sticky;
-  top: 0;
-  background-color: rgb(251, 249, 249);
-  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 10px 0 rgba(219, 216, 216, 0.5);
   position: relative;
+  gap: 10px;
 }
 
 header .row {
@@ -136,7 +134,8 @@ header .help-info {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: max-content;
+  width: 100dvw;
+max-width: max-content;
   padding: 1.3rem;
   gap: 10px;
   display: none;
@@ -224,9 +223,14 @@ header .scheduled-shipment {
   padding: 0.4rem 0;
 }
 
-.scheduled-shipment,
-.scheduled-shipment a {
-  color: rgb(23, 23, 23);
+.nav-bar ul{
+justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-bar ,.scheduled-shipment a {
+ text-decoration: underline;
+ text-underline-offset: 5px;
 }
 
 
@@ -315,15 +319,13 @@ header .scheduled-shipment {
   }
  
   .help .help-info {
-    height: max-content;
-    width: auto;
-    left: -63px;
+    left: -103px;
     top: 41px;
     font-size: 12px;
   }
 
-  .contact-container {
-    flex-direction: column;
+  header .help .contact-container {
+    margin-top: 30px;
   }
 
   .contact--image,  .online--chat  .online--chat-image {
@@ -331,17 +333,18 @@ header .scheduled-shipment {
     height: 25px;
   }
 
+
   header .scheduled-shipment {
     flex-direction: column;
     text-align: center;
     gap: 0;
   }
 
+
 }
 
 @media screen and (max-width: 768px){
   header .help-info  {
-    left: -280px;
     top: 60px;
   }
 }
