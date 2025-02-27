@@ -1,9 +1,7 @@
 .hero-section {
   padding: 2rem 0;
-  height: 100dvh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .hero-section .hero-title {
@@ -14,18 +12,15 @@
 
 .hero-section .offers-container {
   background-color: rgb(251, 249, 249);
-  padding: 1rem;
-  width: 100%;
+  width: 100dvw;
 }
 
 .offers-container ul {
   display: grid;
-  width: 100%;
   grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
-  list-style-type: none;
+  list-style: none;
   flex-wrap: wrap;
-  gap: 10px;
 }
 
 .offers-container .circle {
@@ -35,10 +30,6 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-.offers-container li a {
-  width: auto;
 }
 
 .offers-container .offers-text{
@@ -62,7 +53,8 @@
 
 .hero-products-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -123,6 +115,11 @@
 
 
 @media only screen and (max-width:768px) {
+
+  .hero-section .hero-title {
+    margin: 0;
+    text-align: center;
+  }
 
   .offers-container ul {
     grid-template-columns: repeat(auto-fit, 90px);
