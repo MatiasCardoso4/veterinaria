@@ -5,9 +5,9 @@
 }
 
 .hero-section .hero-title {
-  margin-left: 233px;
-  margin-bottom: 5px;
+  margin: 10px 0 5px 50px ;
   font-size: 2rem;
+  color: #363238;
 }
 
 .hero-section .offers-container {
@@ -33,7 +33,7 @@
 }
 
 .offers-container .offers-text{
-  background-color: #b83af7;
+  background-color: #d298f0;
 }
 
 .hero-section .circle-grey-bg {
@@ -98,17 +98,17 @@
 .hero-products-card-button {
   padding: 10px;
   margin-top: 5px;
-  background-color: #b83af7;
+  background-color: #d298f0;
   color: whitesmoke;
   font-weight: bold;
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  box-shadow: 3px 3px 10px rgba(46, 45, 45, 0.5);
+  box-shadow: 3px 3px 10px rgba(168, 168, 168, 0.5);
 }
 
 .hero-products-card-button:hover {
-  background-color: #b83af7ca;
+  background-color: #d398f0c0;
 }
 
 /*Responsive*/
