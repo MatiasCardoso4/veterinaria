@@ -1,28 +1,17 @@
 .container {
-  padding: 0;
+  padding: 1rem;
   text-align: center;
-  display: grid;
-
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 h1 {
   font-size: 4rem;
 }
 
-h2  {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-p {
-  width: 45%;
-  max-width: 100%;
-  margin-top: 10px;
-  line-height: 28px;
-  letter-spacing: 1px;
-  text-align: center;
-  padding: 0 1rem;
+h2 {
+  margin-bottom: 20px;
 }
 
 ul {
@@ -37,64 +26,47 @@ ul {
   height: 100%;
   width: 100%;
   display: flex;
-  padding: 2rem 0;
+  padding: 1rem ;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
 }
 
 .hero-section {
-  background-color: bisque;
-  flex-direction: column;
+  background-color: #f6effa;
+}
+
+.hero-section p {
+  width: 50%;
 }
 
 .cirugias {
-  background-color: beige;
-  flex-wrap: wrap;
+  background-color: #e3c2f3;
 }
-
-.cirugias .text,
-.hospitaliazacion .text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 
 .hospitaliazacion {
-  flex-direction: column;
   gap: 30px;
+  background-color: #d298f0;
 }
 
-.hospitaliazacion ul {
+.hospitaliazacion ul,
+.cirugias ul {
   text-align: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0.5rem;
 }
 
+.cirugias ul li,
+.hospitaliazacion ul li {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding: 0.8rem;
+}
 
 @media screen and (max-width:600px) {
-  .container {
-    text-align: center;
-  }
 
-  p {
-    width: 100%;
-  }
-
-  .hero-section {
-    height: auto;
-  }
-
-
-}
-
-
-@media only screen and (max-width: 1252px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  p {
+  .hero-section p {
     width: 100%;
   }
 
@@ -109,5 +81,10 @@ ul {
     text-align: center;
   }
 
+}
 
+@media only screen and (max-width: 1252px) {
+  h1 {
+    font-size: 2rem;
+  }
 }

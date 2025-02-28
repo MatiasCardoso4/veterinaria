@@ -1,103 +1,123 @@
 .container {
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
+  justify-content: space-evenly;
   width: 100%;
   gap: 15px;
   padding: 1rem;
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 50px;
+  font-size: 2.3rem;
+  margin-bottom: 30px;
 }
 
 h1,
 h2 {
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 10px rgba(187, 181, 181, 0.5);
+  color: #363238;
 }
 
 h2 {
   font-weight: 500;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
-p,
 ul {
   letter-spacing: 0.12em;
+  font-size: 1.1rem;
 }
 
 .container ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.hero-image{
-  background-image: url('../assets/peluqueria-pages-images/hero-background.png');
-  background-repeat: no-repeat;
-  background-position: 100%;
-  background-size:100vw;
-}
-
-.hero-section,.servicio-peluqueria,
-.tratamientos-especiales {
-  background-color: #a70cf5;
+.hero-section {
+  align-items: center;
+  background-color: #d298f0;
 }
 
 .hero-section p {
-  color: #ffffff;
-  font-size: 1.1;
+  font-size: 1.5rem;
+  letter-spacing: 0.12em;
+  line-height: 45px;
   width: 60%;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
+/* Secciones */
 .hero-section,
 .servicio-peluqueria,
 .tratamientos-especiales {
   width: 100%;
+  flex: 1;
   padding: 2rem;
   border-radius: 8px;
-  color: whitesmoke;
-  transition: transform 0.5s ease-in-out;
   box-shadow: 1px 1px 10px rgba(53, 52, 52, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.hero-section:hover,
-.servicio-peluqueria:hover,
-.tratamientos-especiales:hover {
-  transform: translateY(-10px);
+.servicio-peluqueria {
+  background-color: rgb(248, 248, 181);
+  color: black;
+}
+
+.servicio-peluqueria li {
+  background-color: rgb(255, 229, 111);
+}
+
+.servicio-peluqueria li,.tratamientos-especiales li {
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+.tratamientos-especiales {
+  color: #ffffff;
+  background-color: #d298f0;
+}
+
+.tratamientos-especiales li {
+  background-color: #e2b7f8;
 }
 
 .row {
   display: flex;
+  gap: 10px;
 }
 
-
+/* Responsive */
 @media screen and (max-width: 600px) {
-h1 {
-  font-size: 1.3rem;
-  text-align: center;
-}
-  .hero-section{
-   background-size: auto;
+  h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0;
   }
 
   .hero-section p {
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-section p, ul {
+    line-height: normal;  font-size: 0.9rem;
+  }
+
+  .row {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  p {
-    width: 100%;
-    padding: 1rem;
-  }
-
-
+.row {
+  flex-direction: column;
+}
 }

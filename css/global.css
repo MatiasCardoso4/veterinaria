@@ -10,6 +10,7 @@ body {
   min-height: 100dvh;
   font-family: "Poppins", serif;
   position: relative;
+   background-color: rgb(236, 235, 235);;
 }
 
 
@@ -42,8 +43,8 @@ header .logo {
   margin-top: 15px;
 }
 
-header .row {
-  background-color: #a70cf5;
+header .header-row{
+  background-color: #d298f0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -53,7 +54,7 @@ header .row {
   padding: 1rem 0;
 }
 
-header .row input[type='text'] {
+header .header-row input[type='text'] {
   height: 45px;
   width: 18vw;
   border-radius: 12px 0 0 12px;
@@ -62,11 +63,11 @@ header .row input[type='text'] {
   padding: 10px;
 }
 
-.row form {
+.header-row form {
   display: flex;
 }
 
-header .row button {
+header .header-row button {
   height: 40px;
   width: 55px;
   border-radius: 0 18px 18px 0;
@@ -78,7 +79,7 @@ header .row button {
   height: 45px;
 }
 
-header .row button img {
+header .header-row button img {
   width: 55px;
   display: block;
 }
@@ -220,7 +221,7 @@ header .scheduled-shipment {
 
 .nav-bar a {
   color: #fff;
-  background-color: #a70cf5;
+  background-color: #d298f0;
   font-weight: 500;
   padding: 0.4rem 1rem;
   border-radius: 12px;
@@ -236,20 +237,17 @@ header .scheduled-shipment {
 
 .scheduled-shipment a {
   color: #fff;
-  background-color: #a70cf5;
+  background-color: #d298f0;
   padding: 0.4rem 1rem;
   border-radius: 12px;
   font-weight: 500;
 }
 
-
-
 /*Main section */
 
 .container {
   min-height: 100dvh;
-  width: 100dvw;
-
+  width: 100%;
 }
 
 /*Footer*/
@@ -259,7 +257,7 @@ header .scheduled-shipment {
   height: 100%;
   width: 100%;
   padding: 3rem 1rem;
-  background-color: #b83af7;
+  background-color: #d298f0;
   color: whitesmoke;
   position: relative;
   display: flex;
@@ -270,7 +268,7 @@ header .scheduled-shipment {
 
 .contacto a {
   font-weight: bold;
-  color: rgb(255, 239, 92);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -305,12 +303,12 @@ header .scheduled-shipment {
 }
 
 @media screen and (max-width: 768px) {
-  header .row {
+  header .header-row {
     flex-direction: column;
     gap: 0;
   }
 
-  .row .logo {
+  .header-row .logo {
     width: 90px;
     position: absolute;
     top: -32px;
@@ -345,11 +343,11 @@ header .scheduled-shipment {
     font-size: 1rem;
   }
 
-  header .row input[type='text'] {
+  header .header-row input[type='text'] {
     width: 100%;
   }
 
-  .row form {
+  .header-row form {
     margin-top: 50px;
   }
 
