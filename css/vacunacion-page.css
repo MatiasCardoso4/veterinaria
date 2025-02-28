@@ -28,6 +28,13 @@ ul {
   list-style: none;
 }
 
+.container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .container p {
   font-size: 1.3rem;
   margin: 20px 0;
@@ -50,6 +57,14 @@ ul {
   padding: 1rem;
   border-radius: 8px;
 }
+
+.hero-section,
+.vacunacion,
+.info{
+  border-radius: 8px;
+}
+  
+
 
 .hero-section,
 .vacunacion,
