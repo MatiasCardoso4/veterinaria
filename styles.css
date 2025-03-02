@@ -13,6 +13,7 @@
 .hero-section .offers-container {
   background-color: rgb(251, 249, 249);
   width: 100dvw;
+  padding: 1rem 0;
 }
 
 .offers-container ul {

@@ -245,7 +245,7 @@ header .scheduled-shipment {
 /*Main section */
 
 .container {
-  min-height: 100dvh;
+  min-height: 100%;
   width: 100%;
 }
 
