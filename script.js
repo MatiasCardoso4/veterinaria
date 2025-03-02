@@ -46,7 +46,7 @@ function createElements(product) {
     button.addEventListener("click", () => addToCart(product));
     img.src = product.image;
     title.textContent = product.name;
-    price.textContent = product.price;
+    price.textContent = `$${product.price}`;
     brand.textContent = product.brand;
     card.append(img, title, brand, price, buttonContainer);
     products === null || products === void 0 ? void 0 : products.append(card);

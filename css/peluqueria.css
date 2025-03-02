@@ -24,11 +24,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-ul {
-  letter-spacing: 0.12em;
-  font-size: 1.1rem;
-}
-
 .container ul {
   list-style: none;
   display: flex;

@@ -43,7 +43,7 @@ function createElements(product: any) {
 
   img.src = product.image;
   title.textContent = product.name;
-  price.textContent = product.price;
+  price.textContent = `$${product.price}`;
   brand.textContent = product.brand;
   card.append(img, title, brand, price, buttonContainer);
   products?.append(card);
